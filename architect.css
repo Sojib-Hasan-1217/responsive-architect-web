@@ -7,3 +7,97 @@
   font-optical-sizing: auto;
   font-style: normal;
 }
+
+
+
+/* shared styles */
+.display-flex{
+  display: flex;
+}
+.primary-bg{
+  background-color: rgba(255, 144, 14, 0.1);
+}
+
+.dark-2{
+  color: #424242;
+}
+.dark-3{
+  color: rgba(114, 114, 114, 1);
+}
+
+
+/* header styles */
+
+
+/* nav styles */
+
+
+header nav{
+  max-width: 1440px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+.brand-name{
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+.nav-link-container{
+  gap: 50px;
+}
+.nav-links{
+  list-style: none;
+  
+  font-weight: 400;
+  font-size: 18px;
+}
+.nav-item{
+  text-decoration: none;
+}
+/* banner styles */
+.btn-primary{
+  color: white;
+  background: rgba(255, 144, 14, 1);
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding:20px 24px;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+.banner-content{
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 115px;
+}
+
+
+.banner-title{
+  font-weight: bold;
+  font-size: 4rem;
+  margin: 0;
+}
+.banner-dis{
+margin-bottom: 30px;
+}
+
+
+.banner-pic{
+  width: 1440px;
+  margin: 0 auto;
+}
+
+
+
+/* media quary for small device */
+
+@media screen and (max-width: 576px) {
+  .nav-container, .nav-link-container{
+    flex-direction: column;
+  }
+  .banner-pic{
+    width: auto;
+  }
+  
+}
