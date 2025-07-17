@@ -24,7 +24,9 @@
 .dark-3{
   color: rgba(114, 114, 114, 1);
 }
-
+main > section{
+  margin-bottom: 130px;
+}
 
 /* header styles */
 
@@ -97,19 +99,19 @@ padding: 20px;
 
 /* main section start */
 
-/* feature section styles */
-.feature-section{
+/* team section styles */
+.team-section{
   max-width: 1440px;
   margin: 85px auto;
   gap: 70px;
   align-items: center;
 }
-.feature-title{
+.team-title{
   font-size: 2.8rem;
   font-weight: 500;
   margin: 0;
 }
-.feature-dis{
+.team-dis{
   margin-bottom: 32px;
 }
 .image-container{
@@ -120,6 +122,70 @@ padding: 20px;
 }
 
 
+/* feature section styles */
+.feature-section{
+  max-width: 1440px ;
+  margin: 0 auto;
+}
+.feature-item{
+  gap: 146px;
+}
+.feature-content{
+  margin-top: 30px;
+}
+
+.feature-title{
+  font-size: 2.8rem;
+  font-weight: bold;
+  border-left: 5px solid orange;
+  padding-left: 10px;
+ 
+  
+}
+.card{
+  /* border: 2px solid tomato; */
+  padding: 30px 40px 30px 30px;
+  margin-bottom: 20px;
+  box-shadow: 0px 4px 30px 0 rgba(0, 0, 0, 0.10);
+}
+
+.card-title{
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.card-dis{
+  color: rgba(114, 114, 114, 1);
+}
+.feature-image{
+  position: relative;
+}
+
+.exprience-box{
+  position: relative;
+  top: -128px;
+  left: -92px;
+  background: orange;
+  max-width: 330px;
+text-align: center;
+  padding: 40px;
+  border-radius: 8px;
+  
+}
+.ex-title{
+  font-size: 4rem;
+  font-weight: bold;
+  color: white;
+}
+.ex-dis{
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: white;
+}
+
+
+
+
+
 
 
 
@@ -128,7 +194,7 @@ padding: 20px;
 @media screen and (max-width: 576px) {
 
 
-  .nav-container, .nav-link-container, .feature-section{
+  .nav-container, .nav-link-container, .team-section, .feature-item{
     flex-direction: column;
   }
   .banner-content{
@@ -137,10 +203,21 @@ padding: 20px;
   .image-container{
     grid-template-columns: repeat(1, 1fr);
   }
- .feature-content{
+ .team-content{
   text-align: center;
  }
-  
+  .feature-pic{
+    padding: 20px;
+    width: calc(100% - 40px);
+
+  }
+  .exprience-box{
+    position: static;
+    margin: 20px;
+  }
+  .feature-dis{
+    padding: 20px;
+  }
 }
 
 
