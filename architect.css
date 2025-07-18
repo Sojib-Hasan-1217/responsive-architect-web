@@ -224,6 +224,53 @@ margin: 10px 0px 5px;
   margin: 0;
 }
 
+/* sponsore section styles */
+.sponsore-secton{
+  max-width: 1440px;
+  margin: 0 auto;
+
+}
+.sponsore-div{
+  margin-top:  180px; 
+  margin-bottom: 130px;
+}
+.sponsor-content{
+  width: 542px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.sponsor-title{
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.sponsore-logos{
+  display: flex;
+  gap: 155px;
+  justify-content: space-between;
+ align-items: center;
+ 
+}
+.spn-logo{
+  filter: grayscale(100%);
+}
+/* footer styles0 */
+footer{
+  max-width: 1440px;
+  margin: 0 auto;
+  background: rgba(255, 244, 231, 1);
+}
+.footer-div{
+  margin-bottom: 100px;
+  
+}
+.footer-title{
+  padding-top:40px ;
+  padding-bottom: 40px;
+  padding-left: 410px;
+  font-size: 1.25rem;
+ 
+}
 
 
 
@@ -236,7 +283,8 @@ margin: 10px 0px 5px;
    .nav-link-container, 
    .team-section, 
    .feature-item, 
-   .fact-container
+   .fact-container,
+   .sponsore-logos
    {
     flex-direction: column;
   }
@@ -261,8 +309,8 @@ margin: 10px 0px 5px;
   .feature-dis{
     padding: 20px;
   }
-  .fact-container{
-    gap: 20px;
+  .fact-container {
+    gap: 25px;
   }
   .fact-content{
     width: calc(100% - 20px);
@@ -270,6 +318,21 @@ margin: 10px 0px 5px;
     padding: 10px;
     padding-bottom: 0;
     text-align: center;
+  }
+  .sponsor-content{
+    width: 100%;
+    /* margin: 130px 20px; */
+  }
+  .sponsore-logos{
+    gap: 35px;
+  }
+  .footer-title{
+    padding: 20px;
+    text-align: center;
+
+  }
+  .footer-div{
+    margin-bottom: 20px;
   }
 }
 
